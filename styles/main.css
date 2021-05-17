@@ -1,0 +1,586 @@
+:root {
+   --headline-font: "Source Sans Pro", sans-serif;
+   --body-font: "Open Sans", sans-serif;
+   --white-two: rgb(242, 242, 242);
+   --white-three: rgb(255, 255, 255);
+   --black: rgb(56, 56, 56);
+   --brown-grey: rgb(151, 151, 151);
+   --battleship-grey: rgb(110, 118, 116);
+   --cool-grey: rgb(144, 147, 147);
+   --aqua-marine: rgb(80, 227, 194);
+   --aqua-marine-63: rgba(80, 227, 194, 0.63);
+   --sapphire: rgb(27, 76, 164);
+   --sapphire-image: rgba(27, 75, 164, 0.77);
+   --duck-egg-blue: rgb(218, 252, 245);
+   --purplish-gray: rgb(87, 81, 89);
+}
+
+html {
+   font-size: 62.5%;
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-size: 1rem;
+   min-height: 100%;
+   min-width: 100%;
+}
+
+a {
+   color: var(--aqua-marine);
+   text-decoration: none;
+   font-family: var(--headline-font);
+   font-size: 3.4rem;
+}
+
+a:nth-of-type(3) {
+   margin-left: 1.7rem;
+}
+
+.modal-screen,
+.modal-wrapper {
+   display: none;
+   flex-direction: column;
+}
+
+.modal-open .modal-screen,
+.modal-open .modal-wrapper {
+   display: flex;
+}
+
+.modal-wrapper {
+   min-height: 100vh;
+   width: 100%;
+}
+
+.home {
+   background-image: url(../images/myface.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 100%;
+}
+
+.container {
+   display: flex;
+   width: 100%;
+   height: 100%;
+}
+
+.wrapper {
+   height: 100%;
+}
+
+.content {
+   background: var(--sapphire-image);
+   height: 100%;
+}
+
+.history-contact {
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+
+.name {
+   display: grid;
+   color: var(--white-two);
+   font-family: var(--headline-font);
+   font-size: 5.6rem;
+   padding-top: 8.4rem;
+   margin-top: 0;
+   margin-left: 2rem;
+   margin-bottom: 4rem;
+}
+
+.home-intro {
+   color: var(--duck-egg-blue);
+   font-family: var(--body-font);
+   font-size: 2.4rem;
+   margin-right: 2rem;
+   margin-left: 1.5rem;
+   margin-bottom: 4.9rem;
+   line-height: 4.6rem;
+   text-align: left;
+}
+
+.alt-color {
+   color: var(--aqua-marine);
+}
+
+.page-link {
+   text-align: center;
+}
+
+.icons {
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 4.3rem;
+   margin-bottom: 8.2rem;
+}
+
+.icon {
+   fill: var(--sapphire);
+   height: 2.8rem;
+   width: 4rem;
+}
+
+.uppercase {
+   text-transform: uppercase;
+}
+
+.more-information {
+   display: flex;
+   flex-direction: row-reverse;
+   min-height: 100%;
+}
+
+.navigation {
+   position: absolute;
+   z-index: 1;
+   top: 0px;
+   right: 0px;
+   background-color: var(--sapphire);
+   stroke: var(--duck-egg-blue);
+   min-height: 8.5rem;
+   width: 5.7rem;
+}
+
+.navbar {
+   min-height: 100vh;
+   min-width: 100%;
+   background-color: var(--sapphire);
+}
+
+.headers {
+   font-family: var(--headline-font);
+   font-size: 3.8rem;
+}
+
+.page-header {
+   margin-left: 1.1rem;
+   margin-bottom: 5.5rem;
+}
+
+.form-input {
+   font-family: var(--body-font);
+   font-size: 2rem;
+   font-weight: bold;
+   margin-left: 1.3rem;
+   margin-bottom: 6rem;
+}
+
+.form-input--text {
+   font-family: var(--body-font);
+   font-size: 2rem;
+   color: var(--battleship-grey);
+   margin-top: 1.2rem;
+   padding-top: 1.6rem;
+   padding-right: 1.7rem;
+   padding-bottom: 1.7rem;
+   padding-left: 1.7rem;
+}
+
+.job-title {
+   font-family: var(--headline-font);
+   font-size: 2.6rem;
+   margin-bottom: 1.2rem;
+   margin-left: 1.7rem;
+}
+
+.extra-info {
+   font-family: var(--body-font);
+   font-size: 1.6rem;
+   margin-top: 0;
+   margin-bottom: 0;
+   margin-left: 1.7rem;
+}
+
+.job-description {
+   font-family: var(--body-font);
+   font-size: 1.8rem;
+   line-height: 3.5rem;
+   margin-left: 1.2rem;
+}
+
+.contact-header {
+   margin-top: 0;
+   margin-right: 1.7rem;
+   margin-left: 1.2rem;
+   margin-bottom: 1.2rem;
+}
+
+.nav-name {
+   font-family: var(--headline-font);
+   font-size: 3rem;
+   margin-top: 7.9rem;
+   margin-bottom: 0.5rem;
+   margin-left: 1.1rem;
+}
+
+.description {
+   color: var(--duck-egg-blue);
+   font-family: var(--body-font);
+   font-size: 2rem;
+   margin-top: 0;
+   margin-right: 2.3rem;
+   margin-bottom: 2.8rem;
+   margin-left: 1.5rem;
+}
+
+.coursework {
+   font-family: var(--headline-font);
+   font-size: 2.8rem;
+   margin-top: 0;
+   margin-bottom: 2.4rem;
+   margin-left: 1.3rem;
+}
+
+.course-name {
+   font-family: var(--headline-font);
+   font-size: 2.4rem;
+   margin-top: 0;
+   margin-bottom: 0.5rem;
+   margin-left: 1.8rem;
+}
+
+.course-description {
+   font-family: var(--body-font);
+   font-size: 2rem;
+   margin-top: 0;
+   margin-right: 2.3rem;
+   margin-bottom: 2.2rem;
+   margin-left: 1.8rem;
+}
+
+.portfolio {
+   font-family: var(--headline-font);
+   font-size: 2.8rem;
+   margin-left: 1.3rem;
+}
+
+.external-link {
+   color: var(--aqua-marine-63);
+   stroke: var(--aqua-marine-63) !important;
+   stroke-width: 3 !important;
+   font-family: var(--headline-font);
+   font-size: 2.4rem;
+   font-weight: bold;
+   margin-bottom: 2.7rem;
+   margin-left: 2.1rem;
+   padding-left: 0;
+   white-space: nowrap;
+}
+
+.external-icon {
+   stroke: var(--aqua-marine-63);
+}
+
+.contact-form {
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+}
+
+.button {
+   background-color: var(--sapphire);
+   color: var(--white-two);
+   font-family: var(--body-font);
+   font-weight: bold;
+   font-size: 2.6rem;
+   margin-right: 2.1rem;
+   margin-left: 1.4rem;
+}
+
+h2,
+h4,
+.extra-info,
+.job-description,
+.form-input {
+   color: var(--purplish-gray);
+}
+
+h3,
+h5,
+.course-description,
+.course-name {
+   color: var(--white-two);
+}
+
+@media (min-width: 768px) {
+   h1 {
+      color: var(--white-two);
+      font-size: 8rem;
+      margin-top: 15.9rem;
+      margin-bottom: 5rem;
+      margin-left: 5.1rem;
+   }
+
+   .name {
+      margin-left: 4.1rem;
+   }
+
+   .home-intro {
+      color: var(--duck-egg-blue);
+      font-size: 2.8rem;
+      margin-right: 5.7rem;
+      margin-bottom: 5rem;
+      margin-left: 4.1rem;
+      line-height: 4.6rem;
+      text-align: center;
+   }
+
+   .top-level {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+
+   .employer-image {
+      flex-shrink: 0;
+      background: transparent url(../images/LittleWheelLogo.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 100%;
+      border: 0.1rem solid var(--cool-grey);
+      height: 11.3rem;
+      width: 11.3rem;
+      margin-right: 2.7rem;
+      margin-left: 2.7rem;
+   }
+
+   .navigation {
+      width: 7.8rem;
+   }
+
+   .navigation-flair {
+      position: absolute;
+      z-index: -1;
+      top: 0px;
+      right: 0px;
+      background-color: var(--sapphire);
+      min-height: 122.2%;
+      width: 7.8rem;
+   }
+
+   .icons {
+      margin-top: 0;
+      margin-bottom: 12.6rem;
+   }
+
+   .icon {
+      height: 5rem;
+      width: 5rem;
+   }
+
+   .headers {
+      font-size: 5rem;
+   }
+
+   .page-header {
+      margin-left: 2.5rem;
+      margin-bottom: 5.4rem;
+   }
+
+   .form-input {
+      font-size: 2.6rem;
+      margin-left: 2.7rem;
+      margin-bottom: 5.6rem;
+   }
+
+   .form-input--text {
+      margin-top: 0.5rem;
+      padding-top: 1.6rem;
+      padding-right: 1.7rem;
+      padding-bottom: 1.7rem;
+      padding-left: 1.7rem;
+      width: 62.8rem;
+   }
+
+   .job-title {
+      font-size: 3rem;
+      margin-bottom: 0.3rem;
+      margin-left: 2.7rem;
+   }
+
+   .extra-info {
+      font-size: 1.6rem;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 2.7rem;
+   }
+
+   .job-description {
+      margin-right: 11.4rem;
+      margin-left: 2.7rem;
+   }
+
+   .contact-header {
+      margin-left: 2.6rem;
+      margin-bottom: 0.9rem;
+   }
+
+   .nav-name {
+      font-size: 3.4rem;
+      margin-top: 13.2rem;
+      margin-right: 2.6rem;
+      margin-bottom: 1rem;
+      text-align: right;
+   }
+
+   .description {
+      font-size: 2rem;
+      margin-top: 0;
+      margin-right: 2.5rem;
+      margin-bottom: 4rem;
+      margin-left: 27.7rem;
+      text-align: right;
+   }
+
+   .coursework {
+      font-size: 3.4rem;
+      margin-top: 0;
+      margin-right: 2.9rem;
+      margin-bottom: 3.2rem;
+      text-align: right;
+   }
+
+   .course-name {
+      font-size: 2.4rem;
+      margin-top: 0;
+      margin-right: 3.2rem;
+      margin-bottom: 0.8rem;
+      text-align: right;
+   }
+
+   .course-description {
+      font-size: 2rem;
+      margin-top: 0;
+      margin-right: 3.2rem;
+      margin-bottom: 4.5rem;
+      margin-left: 27.7rem;
+      text-align: right;
+   }
+
+   .portfolio {
+      font-size: 3.4rem;
+      margin-right: 2.5rem;
+      margin-bottom: 3.2rem;
+      text-align: right;
+   }
+
+   .external-link {
+      font-size: 2.4rem;
+      margin-right: 3.1rem;
+      margin-left: 2.2rem;
+      padding-left: 0;
+      text-align: right;
+   }
+
+   .button {
+      font-size: 2.6rem;
+      margin-right: 2.1rem;
+      margin-bottom: 10rem;
+      margin-left: 1.4rem;
+      height: 6.4rem;
+      width: 17.9rem;
+      align-self: center;
+   }
+
+   .to-home-page {
+      text-align: right;
+      margin-right: 3.2rem;
+   }
+}
+
+@media (min-width: 1440px) {
+   h1 {
+      color: var(--white-two);
+      font-size: 8rem;
+      margin-top: 15.9rem;
+      margin-right: 15.2rem;
+      margin-bottom: 5rem;
+      margin-left: 4.1rem;
+   }
+
+   .home {
+      background-image: none;
+      background-color: var(--sapphire);
+   }
+
+   .modal-screen,
+   .modal-wrapper {
+      display: flex;
+   }
+
+   .navbar {
+      min-width: 30vw;
+   }
+
+   .navigation {
+      height: 0;
+      width: 0;
+   }
+
+   .navigation-flair {
+      height: 0;
+      width: 0;
+   }
+
+   .home-intro {
+      color: var(--duck-egg-blue);
+      font-size: 2.8rem;
+      margin-right: 4rem;
+      margin-bottom: 5rem;
+      margin-left: 4.1rem;
+      line-height: 4.6rem;
+      text-align: left;
+   }
+
+   .wrapper {
+      width: 40vw;
+   }
+
+   .personal-image {
+      background-image: url(../images/myface.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      width: 60vw;
+   }
+
+   .contact-header {
+      margin-top: 18.85rem;
+   }
+
+   .job-description {
+      margin-right: 2.1rem;
+   }
+
+   .icons {
+      margin-top: 2.15rem;
+      justify-content: space-around;
+   }
+
+   .form-input--text {
+      margin-right: 3.5rem;
+      width: 81.7rem;
+   }
+
+   .description {
+      margin-left: 5.6rem;
+   }
+
+   .course-description {
+      margin-left: 6.3rem;
+   }
+}
